@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<link rel="stylesheet" href="../css/product.css" />
+<script src="../js/template.js"></script>
+<script src="../js/jquery-3.1.1.js"></script>
+
+<head>
+<title>产品中心</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="布尔教育 http://www.itbool.com" />
+</head>
+    <body>
+    	<div class="container">
+    		<!-- 导航栏 -->
+    		<div id="header" class="header header-fixed">
+    		<img src="../images/logo.png" alt="logo" />
+    		<ul class="header-nav ">
+    			<li ><a href="index.html">首页</a></li>
+    			<li class="header-nav-red"><a href="product.html">产品中心</a>
+				<ul class="hide">
+				<li><a href="product.html#product-middle-1">红色储油卡</a></li>
+				<li><a href="product.html#product-middle-2">蓝色储油卡</a></li>
+				<li><a href="product.html#product-middle-3">加油抵扣卡</a></li>
+				<li><a href="product.html#product-middle-4">国通提油码</a></li>
+				</ul>
+    			</li>
+    			<li><a href="app.html">APP下载</a></li>
+    			<li><a href="news.html">新闻中心</a></li>
+    			<li><a href="help.html">帮助中心</a></li>
+    			<li><a href="about.html">关于国通</a></li>
+    			<li><a href="../ec-shop/index.html">车商城</a></li>
+    		</ul>
+    	</div>
+    	<!-- /*横幅区域*/ -->
+    	<div class="banner">
+    		<div class="banner-logo">
+    	<img src="../images/logo-1.png" alt="" />
+    	<div class="litter-lr"></div>
+    	<img src="../images/中国石油.png" alt="" />
+    	</div>
+    	<div class="clr"></div>
+    	<img src="../images/product-title.png" alt="" />
+    	<img src="../images/product-smalltitle.png" alt="" />
+    	</div>
+    	<!-- 动态图区域 -->
+    	<div class="dynamic">
+			<div class="dynamic-nav left"><p>&lt;</p></div>
+            <div id="dynamic-content">
+    		<ul id="dynamic-template" ></ul>
+            </div>
+             <div class="dynamic-nav right"><p>&gt;</p></div>
+             <div class="dynamic-buy">现 <br />在<br />购<br />买</div>
+                <script id="dynamic" type="text/html ">
+                {{each dynamic as value index}}
+    		<li  class="dynamic-card">
+                <div>
+    			<p>{{value.title}}</p>
+                <p>{{value.smalltitle}}</p>
+                </div>
+    			<img src="{{value.img}}" alt="" />
+    		</li>
+            {{/each}}
+            </script>
+
+    	</div>
+        <div class="lr-1 middle-1-red"></div>
+    	<!-- 内容一 -->
+    	<div id="product-middle-1"class="middle-1">
+    		<div class="middle-1-content middle-float">
+    		<div class="middle-1-card middle-1-red">
+    			<div class="data">
+    				<div class="data-index">
+    					<p>01</p>
+    				</div>
+    				<p>2014年12月01号</p>
+    			</div>
+				<p>红卡</p>
+    		</div>
+    		<p class="middle-content-title">国通”红色“ <br />储油卡</p>
+    		<div class="hr middle-1-red"></div>
+    		<div class="middle-1-font">国通红卡电子油库、锁定油价，油价上涨不用愁国通储油卡采用按“升”储油按“升”加油的消费模式，为用户减轻油价上涨带来的负担，该卡区别与传统的“充值”型加油卡，消费时按加油量扣减，而非以金额计算，这种购买和交易结算方式，可让用户避免因成品油价格波动而带来的影响</div>
+    		</div>
+    		<img src="../images/product-redcard.png" alt="" />
+    		<div class="middle-1-right">
+    			<img src="../images/product-redcard-1.png" alt="" />
+    			<p class="middle-1-right-red">锁定油价</p>
+    			<p>购油即锁定油价，油价上涨不用愁</p>
+    		</div>
+    		<div class="clr"></div>
+    		<div class="lr middle-1-red"></div>
+    	</div>
+    	<!-- ///////////////内容二/////////////// -->
+    	<div id="product-middle-2" class="middle-1">
+    		<img src="../images/product-redcard.png" alt="" />
+    		<div class="middle-1-right">
+    			<img src="../images/product-redcard-1.png" alt="" />
+    			<p class="middle-2-right-blue">锁定油价</p>
+    			<p>购油即锁定油价，油价上涨不用愁</p>
+    		</div>
+    		<div class="middle-2-content middle-float">
+    		<div style="margin-left:120px;"class="middle-1-card middle-2-blue ">
+    			<div class="data">
+    				<div class="data-index">
+    					<p>02</p>
+    				</div>
+    				<p>2014年12月01号</p>
+    			</div>
+				<p>蓝卡</p>
+    		</div>
+    		<div class="clr"></div>
+    		<p class="middle-content-title middle-2-folat">国通”蓝色“ <br />储油卡</p>
+    		<div class="clr"></div>
+    		<div class="hr middle-2-blue middle-2-folat"></div>
+    		<div class="clr"></div>
+    		<div style="text-align:right;"class="middle-1-font">国通红卡电子油库、锁定油价，油价上涨不用愁国通储油卡采用按“升”储油按“升”加油的消费模式，为用户减轻油价上涨带来的负担，该卡区别与传统的“充值”型加油卡，消费时按加油量扣减，而非以金额计算，这种购买和交易结算方式，可让用户避免因成品油价格波动而带来的影响</div>
+    		</div>
+    		<div class="clr"></div>
+    		<div class="lr middle-2-blue"></div>
+    	</div>
+        <!-- ///////////////内容三/////////////// -->
+        <div id="product-middle-3" class="middle-1">
+            <div class="middle-1-right">
+                <p class="middle-3-right-yellow">锁定油价</p>
+                <p>购油即锁定油价，油价上涨不用愁</p>
+                <img src="../images/product-redcard-1.png" alt="" />
+                
+            </div>
+            <div class="middle-1-content middle-float">
+            <div style="margin-left:120px;" class="middle-1-card middle-3-yellow">
+                <div class="data">
+                    <div class="data-index">
+                        <p>03</p>
+                    </div>
+                    <p>2014年12月01号</p>
+                </div>
+                <p>加油币</p>
+            </div>
+            <p class="middle-content-title"><br />国通加油抵扣币</p>
+            <div class="hr middle-3-yellow"></div>
+            <div class="middle-1-font">国通红卡电子油库、锁定油价，油价上涨不用愁国通储油卡采用按“升”储油按“升”加油的消费模式，为用户减轻油价上涨带来的负担，该卡区别与传统的“充值”型加油卡，消费时按加油量扣减，而非以金额计算，这种购买和交易结算方式，可让用户避免因成品油价格波动而带来的影响</div>
+            </div>
+            <img src="../images/product-redcard.png" alt="" />
+            
+            <div class="clr"></div>
+            <div class="lr middle-3-yellow"></div>
+        </div>
+        <!-- ///////////////内容四/////////////// -->
+        <div id="product-middle-4" class="middle-1">
+            <img src="../images/product-redcard.png" alt="" />
+             <div class="middle-1-content middle-float">
+            <p style="margin-top:-40px;" class="middle-content-title middle-2-folat">国通黑金卡</p>
+            <div class="clr"></div>
+            <div class="hr middle-4-black middle-2-folat"></div>
+            <div class="clr"></div>
+            <div style="text-align:right;" class="middle-1-font">国通红卡电子油库、锁定油价，油价上涨不用愁国通储油卡采用按“升”储油按“升”加油的消费模式，为用户减轻油价上涨带来的负担，该卡区别与传统的“充值”型加油卡，消费时按加油量扣减，而非以金额计算，这种购买和交易结算方式，可让用户避免因成品油价格波动而带来的影响</div>
+            <div style="margin:20px 0px 60px 120px;" class="middle-1-card middle-4-black">
+                <div class="data">
+                    <div class="data-index">
+                        <p>04</p>
+                    </div>
+                    <p>2014年12月01号</p>
+                </div>
+                <p>黑金卡</p>
+            </div>
+            </div>
+            <div class="middle-1-right">
+                <img src="../images/product-redcard-1.png" alt="" />
+                <p class="middle-4-right-black">锁定油价</p>
+                <p>购油即锁定油价，油价上涨不用愁</p>
+            </div>
+            <div class="clr"></div>
+            <div class="lr middle-4-black"></div>
+        </div>
+    	<!-- 内容5 -->
+    	<div class="middle-5">
+            <div class="middle-5-left">
+         <img src="../images/middle-5-left.jpg" alt="" /> 
+         <div class="middle-5-content">
+             国通红卡电子油库、锁定油价，油价上涨不用愁国通储油卡采用按“升”储油按“升”加油的消费模式，为用户减轻油价上涨带来的负担，该卡区别与传统的“充值”型加油卡，消费时按加油量扣减
+         </div>
+         </div> 
+         <div class="middle-5-right">
+             <p class="middle-5-title">国通的产品</p>
+             <div class="middle-5-hr"></div>
+             <p class="middle-5-smalltitle">国通的妹子很好看，有一些特别好看</p>
+             <img src="../images/product-middle-5-right.jpg" alt="" />
+         </div> 
+         <div class="clr"></div>
+         <div class="lr middle-5-green"></div>
+        </div>
+        <!-- 内容6 -->
+        <div class="middle-5">
+            <div class="middle-5-left">
+         <img src="../images/middle-5-left.jpg" alt="" /> 
+         <div class="middle-5-content">
+             国通红卡电子油库、锁定油价，油价上涨不用愁国通储油卡采用按“升”储油按“升”加油的消费模式，为用户减轻油价上涨带来的负担，该卡区别与传统的“充值”型加油卡，消费时按加油量扣减
+         </div>
+         </div> 
+         <div class="middle-5-right">
+             <p class="middle-5-title">国通的产品</p>
+             <div class="middle-5-hr"></div>
+             <p class="middle-5-smalltitle">国通的妹子很好看，有一些特别好看</p>
+             <img src="../images/product-middle-5-right.jpg" alt="" />
+         </div> 
+         <div class="clr"></div>
+     </div>
+     <!-- 尾部 -->
+            <div class="footer">
+                <div class="footer-title">
+                    <p>产品中心</p>
+                    <ul>
+                        <li><a href="#">红色储油卡</a></li>
+                        <li><a href="#">蓝色储油卡</a></li>
+                        <li><a href="#">国通储油卡</a></li>
+                        <li><a href="#">加油抵扣卡</a></li>
+                    </ul>
+                </div>
+                <div class="footer-title">
+                    <p>App下载</p>
+                    <ul>
+                        <li><a href="#">IOS</a></li>
+                        <li><a href="#">Android</a></li>
+                    </ul>
+                </div>
+                <div class="footer-title">
+                    <p>新闻中心</p>
+                    <ul>
+                        <li><a href="#">行业情报</a></li>
+                        <li><a href="#">国通动态</a></li>
+                    </ul>
+                </div>
+                <div class="footer-title">
+                    <p>帮组中心</p>
+                    <ul>
+                        <li><a href="#">使用中心</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">在线客服</a></li>
+                    </ul>
+                </div>
+                <div class="footer-title">
+                    <p>关于国通</p>
+                    <ul>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">国通团队</a></li>
+                        <li><a href="#">加入我们</a></li>
+                        <li><a href="#">合作伙伴</a></li>
+                    </ul>
+                </div>
+                <div class="erweima">
+                    <img src="../images/app.jpg" alt="" />
+                    <div>扫码下载国通APP</div>
+                </div>
+                <div class="erweima">
+                    <img src="../images/公众号.jpg" alt="" />
+                    <div>扫码关注国通公众号</div>
+                </div>
+                <div class="erweima">
+                    <img src="../images/移动web应用.jpg" alt="" />
+                    <div>移动WAP应用</div>
+                </div>
+                <div class="clr"></div>
+                <div class="tel">
+                    <h4>电话：</h4>
+                    <div>
+                        <p>023-96566</p>
+                        <p>周一至周五（09:00-20:00）</p>
+                    </div>
+                </div>
+                <div class="address">
+                    <P>
+                        重庆市渝北区星光大道62号海王星科技大厦D座二楼
+                    </P>
+                    <P>2010-2017&copy;国通石油储油卡科技有限公司 渝ICP备15004414号</P>
+                </div>
+            </div>
+    	</div>
+    </body>
+    <script src="../js/product.js"></script>
+</html>

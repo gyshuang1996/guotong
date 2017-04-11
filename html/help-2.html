@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>新建网页</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="布尔教育 http://www.itbool.com" />
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/template.js"></script>
+</head>
+    <body>
+    	<div style="padding-top:30px;width:896px;height:600px;"id="content"></div>
+    		<script type="text/html" id="help">
+    		<p style="font-size:24px;color:#666;text-align:center;">{{title}}</p>
+    		<pre style="font-size:16px;color:#999;line-height:2;" class="content">
+    			{{content_1}}
+    			{{content_2}}
+    		</pre>
+    		</script>
+    </body>
+    <script>
+    	var data={
+    		help:[{
+    		title:"使用指南",
+    		content_1:"1、我是使用指南",
+    		content_2:"2、我是使用指南第二条"
+    	},
+    		{
+    		title:"常见问题",
+    		content_1:"1、我是常见问题",
+    		content_2:"2、我是常见问题第二条"
+    	},
+    			{
+    		title:"在线客户",
+    		content_1:"1、我是在线客户",
+    		content_2:"2、我是在线客户第二条"
+    	}	
+    			]
+    	}
+    	function GetQueryString(id){
+     var reg = new RegExp("(^|&)"+ id +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
+		}
+
+    var index=GetQueryString("id");
+	if(index!=null){
+	 index=GetQueryString("id");
+	}else{
+		 index=0;
+	}
+    
+    var help_content=data.help[index]
+	var html=template("help",help_content);
+document.getElementById('content').innerHTML=html;
+    </script>
+</html>

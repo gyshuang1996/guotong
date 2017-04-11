@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>国通首页</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="布尔教育 http://www.itbool.com" />
+<link rel="stylesheet" href="../css/index.css" />
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/template.js"></script>
+</head>
+    <body>
+    	<div class="container">
+    		<!-- 导航栏 -->
+    		<div id="header" class="header header-fixed">
+    		<img src="../images/logo.png" alt="logo" />
+    		<ul class="header-nav ">
+    			<li class="header-nav-red"><a href="index.html">首页</a></li>
+    			<li><a href="product.html">产品中心</a>
+				<ul class="hide">
+				<li><a href="product.html#product-middle-1">红色储油卡</a></li>
+				<li><a href="product.html#product-middle-2">蓝色储油卡</a></li>
+				<li><a href="product.html#product-middle-3">加油抵扣卡</a></li>
+				<li><a href="product.html#product-middle-4">国通提油码</a></li>
+				</ul>
+    			</li>
+    			<li><a href="app.html">APP下载</a></li>
+    			<li><a href="news.html">新闻中心</a></li>
+    			<li><a href="help.html">帮助中心</a></li>
+    			<li><a href="about.html">关于国通</a></li>
+    			<li><a href="../ec-shop/index.html">车商城</a></li>
+    		</ul>
+    		<div class="clr"></div>
+    	</div>
+
+			<!-- 内容1 横幅-->
+			<div class="middle-1">
+				<div class="rgba">
+					<img src="../images/节能.png" alt="" />
+					<img src="../images/国通石油.png" alt="" />
+					<p class="rgba-content">
+						国通储油卡有0#柴油储油卡、93#汽油储油卡、97#汽油储油卡三种规格 </p>
+						<p class="rgba-content">
+						该卡区别于传统的“充值”型加油卡，是另一种以“升”储油，按“升”扣减的新型油品消费方式，即消费时按加油量扣减，而非以金额计算。</p>
+						<p class="rgba-content">
+						这种购买和交易的结算方式，可让用户避免因成品油价格波动而带来的影响，达到锁定油价、安全方便的目的。
+					</p>
+					<div class="rgba-buy">
+						立即购买
+					</div>
+					<!-- <div class="point-1"></div>
+					<div class="point-2"></div> -->
+				</div>
+				<img class="middle-1-backgroundImg"src="../images/background-img.jpg" alt="" />
+				<div class="point-1 point-backcolor"></div>
+					<div class="point-2 "></div>
+			</div>
+			<!-- 内容区域2 -->
+			<div class="middle-2">
+				<div class="middle-2-left">
+					<div class="detail">
+						<text>国通资质</text>
+						<a href="news.html"><p>详情&gt;&gt;</p></a>
+						<div class="clr"></div>
+					</div>
+					<div class="middle-2-left-img">
+					<img src="../images/营业执照.jpg" alt="" />
+					<img src="../images/kaihu.jpg" alt="" />
+					</div>
+					<p>全国唯一一家具有以储油卡方式零售成品油资质的全国性公司</p>
+				</div>
+
+				<div class="middle-2-right">
+					<div class="detail">
+						<text>新闻咨询</text>
+						<a href="news.html"><p>更多&gt;&gt;</p></a>
+						<div class="clr"></div>
+					</div> 
+					<div id="news-template"></div>
+					<script id="test" type="text/html"> 
+					{{each news as item index }}
+					<div class="middle-2-right-news">
+						<img src="{{item.image}}" alt="" />
+							<div class="news-content">
+						<p>{{item.title}}<p>
+							<div>{{item.content}}</div>
+					 	</div>
+					 </div>
+					 {{/each}}
+				 </script>
+			</div>
+			</div>
+			<!-- 内容区域3 -->
+			<div class="middle-3">
+				<!--card区域-->
+				<div class="middle-3-title">
+				<p class="middle-3-font">全国领先、唯一、安全的储油卡产品</p>
+				<div class="hr"></div>
+				<p class="middle-3-smallfont">牛逼得不要不要的</p>
+				</div>
+				<div class="four">
+					<img class="card"src="../images/red.png" alt="" />
+				</div>
+				<div class="four ">
+					<div class="four-color four-red four-left"></div>
+					<p class="four-title four-left four-left-color">红卡&nbsp;在此</p>
+					<div class="clr"></div>
+					<div class="four-text">国通红卡电子油库、锁定油价，油价上涨不用愁国通储油卡采用按“升”储油按“升”加油的消费模式，为用户减轻油价上涨带来的负担，该卡区别与传统的“充值”型加油卡，消费时按加油量扣减，而非以金额计算，这种购买和交易结算方式，可让用户避免因成品油价格波动而带来的影响</div>
+					<div class="four-botton four-red">了解更多</div>
+				</div>
+				<div class="four ">
+					<div class="four-color four-blue four-right"></div>
+					<p class="four-title four-right four-right-color">蓝卡&nbsp;来也</p>
+					<div class="clr"></div>
+					<div class="four-text ">国通红卡电子油库、锁定油价，油价上涨不用愁国通储油卡采用按“升”储油按“升”加油的消费模式，为用户减轻油价上涨带来的负担，该卡区别与传统的“充值”型加油卡，消费时按加油量扣减，而非以金额计算，这种购买和交易结算方式，可让用户避免因成品油价格波动而带来的影响</div>
+					<div class="four-botton four-blue four-right">了解更多</div>
+				</div>
+				<div class="four">
+					<img class="card"src="../images/blue.png" alt="" />
+				</div>
+				<!-- 先进的互联网客户端管理，大有不同 -->
+				<div class="middle-3-title">
+				<p class="middle-3-font">先进的互联网客户端管理，大有不同</p>
+				<div class="hr"></div>
+				<p class="middle-3-smallfont">APP、微信、WAP、三端在线，同样精彩</p>
+				</div>
+				<div class="middle-3-2">
+				<img src="../images/floter.jpg" alt="" />
+				<div class="middle-3-2-right">
+					<div class="middle-3-2-gouwuche">
+					<img src="../images/gouwuche.jpg" alt="" />
+					</div>
+					<p class="middle-3-2-rightTitle">国通石油APP</p>
+					<div class="cr"></div>
+					<p class="middle-3-2-content">账号查询，一览无余；在线储油，快捷遍历</p>
+					<p class="middle-3-2-content">多卡管理，随心所欲；通知及时，安全放心</p>
+					<div class="four-botton four-red middle-3-2-botton">立即下载</div>
+				</div>
+				</div>
+				<div class="clr"></div>
+				<div class="middle-3-title">
+				<p class="middle-3-font">遍布大重庆的加油网点，多到你难以想象</p>
+				<div class="hr"></div>
+				<p class="middle-3-smallfont">现已支持超过全重庆400个加油网点，持续增加中</p>
+				</div>
+			</div>
+			<!-- 内容区域4-->
+			<div class="middle-4">
+				<img src="../images/map.jpg" alt="" />
+			</div>
+			<!-- 内容区域5-->
+			<div class="middle-3-title">
+				<p class="middle-3-font">战略合作伙伴</p>
+				<div class="hr"></div>
+				<p class="middle-3-smallfont">牛逼得不要不要的</p>
+				</div>
+			<div class="middle-5">
+				<ul>
+					<li><img src="../images/more-logo.png" alt="" /></li>
+					<li><img src="../images/more-logo-2.png" alt="" /></li>
+					<li><img src="../images/more-logo-3.png" alt="" /></li>
+					<li><img src="../images/more-logo-4.png" alt="" /></li>
+					<li><img src="../images/more-logo-5.png" alt="" /></li>
+					<div class="middle-5-li">
+					<li><img class="middle-5-img"src="../images/more-logo-6.png" alt="" /></li>
+					<li><img class="middle-5-img"src="../images/more-logo-7.png" alt="" /></li>
+					<li><img src="../images/more-logo-8.png" alt="" /></li>
+					<li><img src="../images/more-logo-9.png" alt="" /></li>
+					</div>
+				</ul>
+			</div>
+			<!-- 尾部 -->
+			<div class="footer">
+				<div class="footer-title">
+					<p>产品中心</p>
+					<ul>
+						<li><a href="#">红色储油卡</a></li>
+						<li><a href="#">蓝色储油卡</a></li>
+						<li><a href="#">国通储油卡</a></li>
+						<li><a href="#">加油抵扣卡</a></li>
+					</ul>
+				</div>
+				<div class="footer-title">
+					<p>App下载</p>
+					<ul>
+						<li><a href="#">IOS</a></li>
+						<li><a href="#">Android</a></li>
+					</ul>
+				</div>
+				<div class="footer-title">
+					<p>新闻中心</p>
+					<ul>
+						<li><a href="#">行业情报</a></li>
+						<li><a href="#">国通动态</a></li>
+					</ul>
+				</div>
+				<div class="footer-title">
+					<p>帮组中心</p>
+					<ul>
+						<li><a href="#">使用中心</a></li>
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">在线客服</a></li>
+					</ul>
+				</div>
+				<div class="footer-title">
+					<p>关于国通</p>
+					<ul>
+						<li><a href="#">关于我们</a></li>
+						<li><a href="#">国通团队</a></li>
+						<li><a href="#">加入我们</a></li>
+						<li><a href="#">合作伙伴</a></li>
+					</ul>
+				</div>
+				<div class="erweima">
+					<img src="../images/app.jpg" alt="" />
+					<div>扫码下载国通APP</div>
+				</div>
+				<div class="erweima">
+					<img src="../images/公众号.jpg" alt="" />
+					<div>扫码关注国通公众号</div>
+				</div>
+				<div class="erweima">
+					<img src="../images/移动web应用.jpg" alt="" />
+					<div>移动WAP应用</div>
+				</div>
+				<div class="clr"></div>
+				<div class="tel">
+					<h4>电话：</h4>
+					<div>
+						<p>023-96566</p>
+						<p>周一至周五（09:00-20:00）</p>
+					</div>
+				</div>
+				<div class="address">
+					<P>
+						重庆市渝北区星光大道62号海王星科技大厦D座二楼
+					</P>
+					<P>2010-2017&copy;国通石油储油卡科技有限公司 渝ICP备15004414号</P>
+				</div>
+			</div>
+			<a class="a-top" href="#top">
+				<div class="top"></div>
+			<div class="top"></div></a>
+    </body>
+ <script src="../js/index.js"></script>
+</html>

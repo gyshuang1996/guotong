@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>新建网页</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="布尔教育 http://www.itbool.com" />
+<script src="../js/jquery-3.1.1.js"></script>
+</head>
+<style>
+.help-nav{
+	width: 254px;
+	border-right:2px solid #999;
+	list-style-type: none;
+	padding-top: 30px;
+}
+a{
+	text-decoration: none;
+}
+.help-nav>li{
+	margin-left: 50px;
+	width: 180px;
+	height:50px;
+	border-top:1px solid #999;
+}
+ol li a{
+	color:#666;
+	line-height: 50px;
+	padding-left: 50px;
+}
+.help-nav>li>img{
+	padding-left: 20px;
+	padding-top: 15px;
+}
+.help-nav>li>a:hover{
+	color:rgb(244,65,56);
+}
+.ulcolor>a{
+	color:rgb(244,65,56);
+}
+</style>
+    <body>
+    	<ol class="help-nav">
+    		<li class="ulcolor"><img src="../images/help-x.png" alt="" /><a href="help-2.html?id=0" target="help-2">使用指南</a></li>
+    		<li><img src="../images/help-x-1.png" alt="" /><a href="#" target="help-2">常见问题</a></li>
+    		<li style="border-bottom:1px solid #999"><img src="../images/help-x-1.png" alt="" /><a href="help-2.html?id=2" target="help-2">在线客服</a></li>
+    	</ol>
+    </body>
+    <script>
+    $(document).ready(function(){
+    $(".help-nav li ").click(function(){
+    	$(this).addClass("ulcolor").siblings().removeClass("ulcolor");
+    	$(".help-nav li>img").attr("src","../images/help-x-1.png");
+    	$(".ulcolor img").attr("src","../images/help-x.png");
+    });
+});
+    </script>
+</html>
